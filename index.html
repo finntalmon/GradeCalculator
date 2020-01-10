@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Finn's Grade Calculator</title>
+</head>
+<body>
+<h1>Grade Calculator:</h1>
+
+<table id="gradeTable" border=”1” cellspacing=”2” cellpadding=”5” align="center">
+    <tr id="titles">
+        <td>Category</td>
+        <td>Grades</td>
+        <td>Weight(%)</td>
+    </tr>
+    <tr id="1">
+        <td>Homework</td>
+        <td><input id="hwScores" placeholder="Enter Scores" value="70,80,90,89"></td>
+        <td><input id="homeworkWeight" placeholder = "Enter Weight" value="15"></td>
+    </tr>
+
+    <tr id="2">
+        <td>Classwork</td>
+        <td><input id="cwScores" placeholder="Enter Scores" value="80,60,90,100,75"></td>
+        <td><input id="classworkWeight" placeholder = "Enter Weight" value="15"></td>
+    </tr>
+
+    <tr id="3">
+        <td>Tests</td>
+        <td><input id="testScores" placeholder="Enter Scores" value="100,80,70,90"></td>
+        <td><input id="testWeight" placeholder="Enter Weight" value="30"></td>
+    </tr>
+
+    <tr id="4">
+        <td>Participation</td>
+        <td><input id="participationScores" placeholder="Enter Scores" value="90,100,70,80"></td>
+        <td><input id="participationWeight" placeholder="Enter Weight" value="15"></td>
+    </tr>
+
+    <tr id="5">
+        <td>Projects</td>
+        <td><input id="projectScores" placeholder="Enter Scores" value="95,80,70"></td>
+        <td><input id="projectWeight" placeholder="Enter Weight" value="15"></td>
+    </tr>
+</table>
+
+<table id="finalTable" border=”1” cellspacing=”2” cellpadding=”5” align="center">
+    <tr>
+        <td>You want at least</td>
+        <td>Weight(%) of Final</td>
+    </tr>
+
+    <tr>
+        <td><input type=text id="gradeWanted" value="90" placeholder="Desired Grade(%)"></td>
+        <td><input type=text id="finalWeight" value="10" placeholder="Enter Weight(%)"></td>
+    </tr>
+
+
+</table>
+
+<button onclick="onSubmit()">Calculate your Grade</button>
+
+<div id="grade"></div>
+
+<button onclick="onClick()">Calculate Final Exam Grade Needed</button>
+
+<div id="finalGradeNeeded" >??</div>
+
+<button onClick="reset()">Reset</button>
+</body>
+</html>
